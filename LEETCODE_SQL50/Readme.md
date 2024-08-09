@@ -25,3 +25,8 @@ select tweet_id from Tweets where length(content) > 15;
 Select u.unique_id ,e.name from Employees as e left join
 EmployeeUNI as u on e.id = u.id;
 ```
+**1068**
+```
+# Write your MySQL query statement below
+Select p.product_name ,s.year,s.price from Sales as s left join product as p on s.product_id = p.product_id;
+```
