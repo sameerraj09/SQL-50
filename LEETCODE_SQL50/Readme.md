@@ -20,3 +20,8 @@ SELECT distinct author_id as id from Views where author_id = viewer_id order by 
 ```
 select tweet_id from Tweets where length(content) > 15;
 ```
+**1378**
+```
+Select u.unique_id ,e.name from Employees as e left join
+EmployeeUNI as u on e.id = u.id;
+```
