@@ -1,4 +1,4 @@
-**1757**
+![image](https://github.com/user-attachments/assets/ea8c0222-b164-4aec-bf4c-e7c33654043e)**1757**
 ```
 SELECT product_id from Products 
 WHERE low_fats='Y' && recyclable ='Y'
@@ -83,7 +83,14 @@ Write a query that prints a list of employee names (i.e.: the name attribute) fo
 ```
 SELECT NAME FROM EMPLOYEE WHERE SALARY> 2000 AND MONTHS <10 ORDER BY EMPLOYEE_ID
 ```
-
+![image](https://github.com/user-attachments/assets/43e6d851-12fd-4e22-b6f3-0a357277742d)
+Logic:-
+SYNTAX OS SQL
+CASE 
+    WHEN 'CONDITION' THEN 'PRINT'
+    ELSE 'PRINT'
+    END AS 'VARIABLE NAME'
+    
 ```
 /*
 Enter your query here.
@@ -97,3 +104,29 @@ SELECT
     END AS TriangleType
 FROM triangles;
 ```
+
+![image](https://github.com/user-attachments/assets/4367989e-af6e-46ac-853e-89ae45de2c07)
+**Learning:-**
+Function:
+Concat function take n no of input which we want to display togenther seprated by comma 
+CONCAT(ATRIBUTES,'text',anythig);
+substring(coulmn_name,position,size);
+upper(coulmn name)
+group by(to group rows based upon some property)
+order by to arrange the row according to order
+
+we can two query one after another to diplay two output
+
+```
+-- Query 1: Alphabetically ordered list of names with occupation initials
+SELECT CONCAT(Name, '(', SUBSTRING(Occupation, 1, 1), ')') AS NameOccupation
+FROM OCCUPATIONS
+ORDER BY Name;
+
+-- Query 2: Count of each occupation, sorted by count and then alphabetically
+SELECT CONCAT('There are a total of ', COUNT(*), ' ', LOWER(Occupation), 's.')
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY COUNT(*), Occupation;
+```
+
