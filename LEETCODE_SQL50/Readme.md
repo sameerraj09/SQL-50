@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ea8c0222-b164-4aec-bf4c-e7c33654043e)**1757**
+**1757**
 ```
 SELECT product_id from Products 
 WHERE low_fats='Y' && recyclable ='Y'
@@ -117,6 +117,7 @@ order by to arrange the row according to order
 
 we can two query one after another to diplay two output
 
+![image](https://github.com/user-attachments/assets/ea8c0222-b164-4aec-bf4c-e7c33654043e)
 ```
 -- Query 1: Alphabetically ordered list of names with occupation initials
 SELECT CONCAT(Name, '(', SUBSTRING(Occupation, 1, 1), ')') AS NameOccupation
